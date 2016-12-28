@@ -5,7 +5,7 @@ ENV DEV_PWD dev2016
 ENV LANG C.UTF8
 ENV LC_ALL C.UTF-8
 
-ADD server_profile.sh /etc/profile.d/server_profile.sh
+COPY server_profile.sh /etc/profile.d/
 RUN chmod a+x /etc/profile.d/server_profile.sh
 RUN echo 'export LANG='$LANG >> /etc/profile.d/server_profile.sh
 RUN echo 'export LC_ALL='$LC_ALL >> /etc/profile.d/server_profile.sh
