@@ -13,7 +13,7 @@ sleep 10
 
 docker exec -it test01 bash /sbin/change.sh dev2017 dev2017 dev2017 dev2017 
 
-docker stop test01
+docker restart test01
 #ssh root@localhost -p 9002
 #rm -rf /root/.ssh/known_hosts
 
